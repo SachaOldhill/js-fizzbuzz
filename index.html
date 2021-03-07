@@ -11,16 +11,19 @@
     </div>
     <!-- Array.from(Array(100).keys()) -->
    <script>
-    var arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    // var arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    var arr = Array.from(Array(100).keys())
 
-    for (var i = 0; i < 15; i++)
+    for (var i = 0; i < 100; i++)
     {
       var elem = arr[i];
       var mult = elem % 3 === 0;
-      if (mult) {
-        console.log('fizz')
+      if (elem % 15 === 0) {
+        console.log('fizzbuzz')
       } else if (elem % 5 === 0) {
         console.log('buzz')
+      } else if (mult) {
+        console.log('fizz')
       } else {
         console.log(arr[i])
       }
