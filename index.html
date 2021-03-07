@@ -11,18 +11,31 @@
     </div>
     <!-- Array.from(Array(100).keys()) -->
    <script>
-    var arr = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    var arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-    var mol3 = elem % 3 == 0;
-
-    for (var i = 0; i < arr.lenght; i++)
+    for (var i = 0; i < 15; i++)
     {
       var elem = arr[i];
-      if (arr[i]==3) {
-        console.log('elem')
+      var mult = elem % 3 === 0;
+      if (mult) {
+        console.log('fizz')
+      } else if (elem % 5 === 0) {
+        console.log('buzz')
+      } else {
+        console.log(arr[i])
       }
-    }console.log(arr[i])
+    }
+    // console.log(arr[i])
 
+    // var animali = ['oca','cane', 'mucca', 'capra', 'porcello']
+    //
+    // for (var i = 0 ; i < animali.lenght ; i++ ){
+    //   if ( animali === 'cane') {
+    //     console.log('bau bau')
+    //   }
+    // }
+    //
+    // console.log(animali)
    </script>
 
   </body>
